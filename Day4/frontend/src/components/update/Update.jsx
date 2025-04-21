@@ -71,7 +71,7 @@ const Update = () => {
       setStatus({ message: "", type: "" });
       
       const userData = { name, age: parseInt(age) };
-      await axios.put(`http://localhost:7001/users/${id}`, userData);
+      await axios.put(`https://fsdbackendita-5zvk.onrender.com/users/${id}`, userData);
       
       setStatus({
         message: "User updated successfully",

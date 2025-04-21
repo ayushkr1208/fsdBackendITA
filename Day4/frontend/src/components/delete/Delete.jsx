@@ -29,7 +29,7 @@ const Delete = () => {
   const handleDelete = async (userId) => {
     try {
       setDeleting(true);
-      await axios.delete(`http://localhost:7001/users/${userId}`);
+      await axios.delete(`https://fsdbackendita-5zvk.onrender.com/users/${userId}`);
       // Update the users list by removing the deleted user
       setUsers(users.filter(user => user.id !== userId));
       setDeleteConfirm(null);
